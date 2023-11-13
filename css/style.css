@@ -6,8 +6,46 @@ a { text-decoration: none; color:black; }
 
 /* ==========HEADER============= */
 /* ==========LOGO============= */
+.logo{
+    max-width: 75px;
+    max-height: 75px;
+}
 /* ==========NAVIGATION============= */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+    display: flex;
+	text-align: center;
+	display: block;
+}
+
+.main-nav li {
+    margin: auto;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+.main-nav a:hover {
+	color: #718daa;
+}
 
 /* ==========MAIN BODY CONTENT============= */
 
