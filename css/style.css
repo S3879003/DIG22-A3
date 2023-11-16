@@ -1,5 +1,12 @@
 /* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
     /* some basic css resetting */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}    
 body { 
     margin: 0;
     box-sizing: border-box;     
@@ -118,6 +125,7 @@ ul {
 }
 /* ==========SECTION 2 STYLING============= */
 .about{
+    margin-top: 50px;
     height: 80vh;
 }
 
@@ -143,10 +151,66 @@ ul {
 
 
 /* ==========SECTION 3 STYLING============= */
+.gallery h1{
+    margin-bottom: 50px;
+}
 
+.image-gallery{
+    margin: auto;
+    width: 850px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px;
+    gap: 50px;
+}
+
+.image-gallery img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ==========SECTION 4 STYLING============= */
+.bookings{
+    margin-top: 100px;
+}
 
+.booking-card{
+    width: 85%;
+    border: #34495e;
+    border-style: solid;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    height: 300px;
+    margin: 100px auto;
+}
+
+.booking-card img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -50px;
+    left: 50px;
+}
+
+.booking-card div{
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-card > div > h2, .booking-card > div > h3{
+    text-align: center;
+}
+
+.booking-card button{
+    text-align: center;
+}
 
 /* ==========FOOTER STYLIING============= */
 
