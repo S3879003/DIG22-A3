@@ -2,12 +2,22 @@
     /* some basic css resetting */
 body { 
     margin: 0;
-     box-sizing: border-box; 
-
-    
-    }
+    box-sizing: border-box;     
+}
 a { text-decoration: none; color:black; }
 
+.p-left-m { 
+    padding-left: 75px;
+}
+
+.p-right-m { 
+    padding-right: 75px;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+}
 
 /* ==========HEADER============= */
 /* ==========LOGO============= */
@@ -90,10 +100,6 @@ ul {
     text-align: center;
 }
 
-.info-box p {
-
-}
-
 .info-box button{
     display: flex;
     align-self: center;
@@ -112,43 +118,28 @@ ul {
 }
 /* ==========SECTION 2 STYLING============= */
 .about{
-    height: 100vh;
+    height: 80vh;
+}
+
+.about p{
+
+}
+
+.about > div > img {
+    width: 200px;
+    height: 200px;
 }
 
 .flex-container {
     margin-top: 50px;
     display: flex;
-    /* grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25%; */
-    height: 33vh;
+    gap: 50px;
+    /* height: 33vh; */
     width: 75vw;
     margin: 50px auto 0 auto;
+    justify-content: center;
+    align-items: center;
 }
-
-.flex-item {
-    min-width: 250px;
-    height: 250px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.flex-item-fill{
-    flex: 0 0 75%;
-}
-
-
-/* .left-column {
-    grid-column: 1;
-  } */
-
-/* Specific styling for the left-top item */
-/* .left-top {
-grid-column: 1;
-grid-row: 1;
-background-color: #4CAF50;
-color: #fff;
-} */
 
 
 /* ==========SECTION 3 STYLING============= */
