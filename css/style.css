@@ -1,6 +1,11 @@
 /* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
     /* some basic css resetting */
-body { margin: 0; box-sizing: border-box; }
+body { 
+    margin: 0;
+     box-sizing: border-box; 
+
+    
+    }
 a { text-decoration: none; color:black; }
 
 
@@ -15,6 +20,10 @@ a { text-decoration: none; color:black; }
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
 }
 
 ul {
@@ -51,10 +60,99 @@ ul {
 
 
 /* ==========SECTION 1 STYLING============= */
+.landing-image{
+    background-image: url('../images/placeholder2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 91vh;
+}
 
+.info-box{
+    position: absolute;
+    right: 5%;
+    top: 55%;
+    transform: translateY(-50%); 
+    width: 25%;
+    height: 400px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.info-box h2{
+    margin: 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+.info-box p {
+
+}
+
+.info-box button{
+    display: flex;
+    align-self: center;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
 /* ==========SECTION 2 STYLING============= */
+.about{
+    height: 100vh;
+}
+
+.flex-container {
+    margin-top: 50px;
+    display: flex;
+    /* grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%; */
+    height: 33vh;
+    width: 75vw;
+    margin: 50px auto 0 auto;
+}
+
+.flex-item {
+    min-width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.flex-item-fill{
+    flex: 0 0 75%;
+}
+
+
+/* .left-column {
+    grid-column: 1;
+  } */
+
+/* Specific styling for the left-top item */
+/* .left-top {
+grid-column: 1;
+grid-row: 1;
+background-color: #4CAF50;
+color: #fff;
+} */
+
 
 /* ==========SECTION 3 STYLING============= */
+
 
 /* ==========SECTION 4 STYLING============= */
 
