@@ -26,6 +26,21 @@ h1{
     font-size: 45px;
 }
 
+button{
+    display: flex;
+    align-self: center;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    background: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 /* ==========HEADER============= */
 /* ==========LOGO============= */
 .logo{
@@ -94,6 +109,9 @@ ul {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
@@ -121,7 +139,6 @@ ul {
     color: #fff;
     background: black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, transform 0.2s;
 }
 /* ==========SECTION 2 STYLING============= */
 .about{
@@ -141,9 +158,10 @@ ul {
 .flex-container {
     margin-top: 50px;
     display: flex;
-    gap: 50px;
+    gap: 35px;
     /* height: 33vh; */
     width: 75vw;
+    max-width: 1300px;
     margin: 50px auto 0 auto;
     justify-content: center;
     align-items: center;
@@ -157,16 +175,16 @@ ul {
 
 .image-gallery{
     margin: auto;
-    width: 850px;
+    width: 1300px;
     display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 250px 250px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px;
     gap: 50px;
 }
 
 .image-gallery img{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,6 +197,7 @@ ul {
 
 .booking-card{
     width: 85%;
+    max-width: 1300px;
     border: #34495e;
     border-style: solid;
     border-radius: 15px;
@@ -211,6 +230,70 @@ ul {
 .booking-card button{
     text-align: center;
 }
+
+
+/* ==========Contact Section 4 STYLING============= */
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact div {
+    flex: 1;
+}
+
+.contact > div > img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.contact-form-container {
+    overflow: hidden;
+    width: 75%; /* Updated width to 75% */
+  }
+  
+  .contact-form {
+    max-width: 700px;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin: 0 auto; /* Center align the form */
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    color: #333333;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555555;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
 
 /* ==========FOOTER STYLIING============= */
 
