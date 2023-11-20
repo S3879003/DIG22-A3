@@ -146,10 +146,6 @@ ul {
     height: 80vh;
 }
 
-.about p{
-
-}
-
 .about > div > img {
     width: 200px;
     height: 200px;
@@ -310,7 +306,9 @@ ul {
 
 /* ===== DESKTOP HD: Media queries for most HD desktops ===== */
 @media only screen and (max-width: 1920px) {
-   
+   .about{
+    height: 900px;
+   }
     
     
 }
@@ -318,27 +316,135 @@ ul {
 /* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
 @media only screen and (max-width: 1366px) { 
 
-      
+    .image-gallery{
+    width: 1000px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    }
+
+    .image-gallery img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .booking-card{
+        width: 75%;
+    }
     
 }
 
 /* ===== TABLET: Media queries for verticle and horizontal ===== */
 @media only screen and (max-width: 1024px) { 
-
-      
+    .image-gallery{
+        width: 700px;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px 300px;
+        }
     
+    .image-gallery img {
+        height: 300px;
+        width: 300px;
+    }
 }
 
 @media only screen and (max-width: 768px) { 
+    .info-box{
+        width: 35%;
+    }
 
+    .about{
+        height: 1450px;
+    }
+
+    .about > div > img {
+        width: 250px;
+        height: 250px;
+    }
     
+    
+    .flex-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .flex-container:nth-child(3){
+        flex-direction: column;        
+    }
+
+    .flex-container > p {
+        width: 80%;
+    }
+
+    .image-gallery{
+        width: 600px;
+        grid-template-columns: 275px 275px;
+        grid-template-rows: 275px 275px 275px;
+        }
+    
+    .image-gallery img {
+        height: 275px;
+        width: 275px;
+    }
+
+    .booking-card{
+        flex-direction: column;
+        height: 450px;
+    }
         
+    .booking-card > img {
+        width: 200px;
+        height: 200px;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 100%;
+        height: auto;
+    }
+
+    .booking-card div{
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+
+    .booking-card p {
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact img {
+        display: none;
+    }
 }
 
 /* ===== MOBILE: Media queries for small mobile resolution. ===== */
 @media only screen and (max-width: 640px) { 
+    .image-gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    
+    .image-gallery img {
+        height: 350px;
+        width: auto;
+    }
+
+    .booking-card > img {
+        top: 30px;
+        width: 250px;
+        height: auto;
+    }
+
+    .booking-card div {
+        margin-top: 175px;
+    }
         
 }
 
