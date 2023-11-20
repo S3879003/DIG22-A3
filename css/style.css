@@ -302,14 +302,14 @@ ul {
 footer
 {
     width: 100%;
-    margin: -3.5px;
+    margin-top: -3.5px;
     height: 300px;
     background: #546F4E;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    /* gap: 50px; */
 }
 
 .footer-form{
