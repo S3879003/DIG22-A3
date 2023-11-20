@@ -12,24 +12,26 @@
 
         <link rel="stylesheet" href="css/style.css">         
         <link rel="icon" href="place-your-tab-icon-here.jpg"> 
+        
                 
     </head>
     <body>
-        <div class="navbar">
+        <header class="navbar">
             <!-- LOGO -->
             <img class="logo" src="./images/placeholder.jpg" alt="">
 
             <!--NAVIGATION-->
             <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#bookings">bookings</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </header>
         <!--MAIN CONTENT-->       
             <!--SECTION 1-->
-            <section class="landing-image">
+            <section id="home" class="landing-image">
                 <div class="info-box">
                     <h2>Welcome to Lilac Valley</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus in corporis ex veritatis architecto blanditiis aut repudiandae laboriosam iure rem?</p>
@@ -38,7 +40,7 @@
             </section>
                 
             <!--SECTION 2-->
-            <section class="about">
+            <section id="about" class="about">
                 <h1>About</h1>
 
                 <div class="flex-container p-left-m">
@@ -58,7 +60,7 @@
 
             </section>
             <!--SECTION 3-->
-            <section class="gallery">
+            <section id="gallery"  class="gallery">
                 <h1>gallery</h1>
                 <div class="image-gallery">
                     <img src="./images/placeholder.jpg" alt="">
@@ -71,7 +73,7 @@
             </section>
             
             <!--SECTION 4-->
-            <section class="bookings">
+            <section id="bookings" class="bookings">
                 <h1>Bookings</h1>
 
                 <div class="booking-card">
@@ -97,7 +99,7 @@
             </section>
 
             <!--SECTION 5-->
-            <section class="contact">
+            <section id="contact" class="contact">
                 <div class="contact-form-container">
                     <h1>Contact Us</h1>
                     <form action="" class="contact-form">
@@ -129,7 +131,8 @@
         
         <!--FOOTER-->
         <footer></footer>
-        <!--CONTACT FORM OR TEXT-->
-        <!--SOCIAL MEDIA ?-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="/js/smoothscroll.js"></script>
     </body> 
 </html>
