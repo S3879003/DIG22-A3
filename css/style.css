@@ -105,6 +105,8 @@ ul {
     top: 55%;
     transform: translateY(-50%); 
     width: 25%;
+    max-width: 400px;
+    min-width: 250px;
     height: 400px;
     background-color: #f0f0f0;
     padding: 20px;
@@ -126,6 +128,8 @@ ul {
 }
 
 .info-box button{
+    position: absolute;
+    bottom: 20px;
     display: flex;
     align-self: center;
     padding: 12px 24px;
@@ -375,7 +379,11 @@ ul {
 
 @media only screen and (max-width: 768px) { 
     .info-box{
-        width: 35%;
+        top: 350px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        max-width: 100%;
     }
 
     .about{
@@ -459,13 +467,7 @@ ul {
 
 
 @media only screen and (max-width: 360px) {
-    .info-box{
-        top: 350px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 250px;
-        max-width: 100%;
-    }
+
     
     .navbar a {
         font-size: 12px;
