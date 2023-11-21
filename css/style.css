@@ -10,8 +10,13 @@
 body { 
     margin: 0;
     box-sizing: border-box;     
+    background-color: #fafafa;
 }
-a { text-decoration: none; color:black; }
+a { text-decoration: none; color: #39393b; }
+
+p, h1, h2, h3{
+    color: #39393b;
+}
 
 .p-left-m { 
     padding-left: 75px;
@@ -38,7 +43,7 @@ button{
     border: none;
     border-radius: 8px;
     color: #fff;
-    background: #546F4E;
+    background: #627154;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -58,7 +63,8 @@ button{
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: white;
+    background-color: #fafafa;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -68,6 +74,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #fafafa;
 }
 
 .logo a,
@@ -88,7 +95,7 @@ ul {
 	font-size: .99em;
 }
 .main-nav a:hover {
-	color: #718daa;
+	color: #93ae79;
 }
 
 /* ==========MAIN BODY CONTENT============= */
@@ -96,7 +103,7 @@ ul {
 
 /* ==========SECTION 1 STYLING============= */
 .landing-image{
-    background-image: url('../images/placeholder2.jpg');
+    background-image: url('../images/landing.jpeg');
     background-size: cover;
     background-position: center;
     height: 91vh;
@@ -111,7 +118,7 @@ ul {
     max-width: 400px;
     min-width: 250px;
     height: 400px;
-    background-color: #f0f0f0;
+    background-color: #fafafa;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -143,19 +150,26 @@ ul {
     cursor: pointer;
     border: none;
     border-radius: 8px;
-    color: #fff;
+    color: #e8e1d1;
     background: #546F4E;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 /* ==========SECTION 2 STYLING============= */
 .about{
     margin-top: 50px;
-    height: 80vh;
+    height: 100vh;
+}
+
+.about p {
+    font-size: 24px;
 }
 
 .about > div > img {
-    width: 200px;
+    width: 400px;
+    min-width: 300px;
     height: 200px;
+    min-height: 300px;
+    object-fit: cover;
 }
 
 .flex-container {
@@ -178,19 +192,23 @@ ul {
 
 .image-gallery{
     margin: auto;
-    width: 1300px;
+    width: 1000px;
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
     gap: 50px;
 }
 
 .image-gallery img{
     width: 400px;
-    height: 400px;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: cover;
 }
 
 /* ==========SECTION 4 STYLING============= */
@@ -213,9 +231,13 @@ ul {
 .booking-card img {
     position: absolute;
     width: 300px;
+    min-width: 300px;
     height: 300px;
+    max-height: 300px;
     top: -50px;
     left: 50px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .booking-card div{
@@ -304,7 +326,7 @@ footer
     width: 100%;
     margin-top: -3.5px;
     height: 300px;
-    background: #546F4E;
+    background: #5d6b59;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,18 +363,16 @@ footer
     gap: 10px;
 }
 
-/* ==========RESPONSIVE DESIGN============= */
-
-/* ===== 5K RETINA MAC LABS: Media queries for Curtin Uni mac lab testing only ===== */
-@media only screen and (max-width: 5120px) {
-
-        
+.footer-form button{
+    background-color: #333333;
+    margin-bottom: 10px;
 }
 
+/* ==========RESPONSIVE DESIGN============= */
 /* ===== DESKTOP HD: Media queries for most HD desktops ===== */
 @media only screen and (max-width: 1920px) {
    .about{
-    height: 900px;
+        height: 1200px;
    }
     
     
@@ -391,10 +411,16 @@ footer
         width: 300px;
     }
 
+    .bookings h1{
+        padding-bottom: 100px;
+    }
+
     .booking-card{
         flex-direction: column;
         height: auto;
         width: 55%;
+        margin-bottom: 175px;
+        padding-bottom: 10px;
     }
         
     .booking-card > img {
@@ -409,7 +435,7 @@ footer
 
     .booking-card div{
         margin-left: 0px;
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     .booking-card p {
@@ -428,7 +454,7 @@ footer
     }
 
     .about{
-        height: 1450px;
+        height: 1600px;
     }
 
     .about > div > img {
@@ -501,7 +527,7 @@ footer
     }
 
     .booking-card div {
-        margin-top: 175px;
+        /* margin-top: 175px; */
     }
         
 }
