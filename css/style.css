@@ -183,6 +183,11 @@ ul {
     background: #546F4E;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.info-box a {
+    color: #e8e1d1;
+}
+
 /* ==========About Section STYLING============= */
 .about{
     margin-top: 50px;
@@ -534,6 +539,18 @@ footer
 
 /* ===== MOBILE: Media queries for small mobile resolution. ===== */
 @media only screen and (max-width: 640px) { 
+    .navbar li {
+        font-size: 11px;
+    }
+
+    .navbar a {
+        padding: 12px;
+    }
+    
+    .info-box{
+        width: 360px;
+    }
+
     .about{
         margin-bottom: 200px;
     }
@@ -550,19 +567,23 @@ footer
         width: auto;
     }
     .booking-card{
-        width: 75%;
+        width: 95%;
     }
 
     .booking-card > img {
+        min-width: 200px;
+        max-height: 200px;
         top: 30px;
-        width: 250px;
-        height: auto;
+        left: 50%;
     }
 }
 
 
 @media only screen and (max-width: 360px) {
-
+    .info-box{
+        width: 95%;
+        height: 500px;
+    }
     
     .navbar a {
         font-size: 11px;
