@@ -1,7 +1,5 @@
 /* ==========BASIC UNIVERSAL STYLING & CLEAN UP============= */
     /* some basic css resetting */
-
-
 * {
     margin: 0;
     padding: 0;
@@ -61,7 +59,7 @@ button{
 }
 
 hr {
-    overflow: visible; /* For IE */
+    overflow: visible;
     padding: 0;
     border: none;
     border-top: medium double #333;
@@ -185,7 +183,7 @@ ul {
     background: #546F4E;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* ==========SECTION 2 STYLING============= */
+/* ==========About Section STYLING============= */
 .about{
     margin-top: 50px;
     height: 1250px;
@@ -216,7 +214,7 @@ ul {
 }
 
 
-/* ==========SECTION 3 STYLING============= */
+/* ==========Gallery STYLING============= */
 .gallery h1{
     margin-bottom: 50px;
 }
@@ -242,7 +240,7 @@ ul {
     object-fit: cover;
 }
 
-/* ==========SECTION 4 STYLING============= */
+/* ==========Booking section STYLING============= */
 .bookings{
     margin-top: 100px;
 }
@@ -289,7 +287,7 @@ ul {
 }
 
 
-/* ==========Contact Section 4 STYLING============= */
+/* ==========Contact section  STYLING============= */
 .contact{
     display: flex;
     flex-direction: row;
@@ -307,14 +305,14 @@ ul {
 
 .contact-form-container {
     overflow: hidden;
-    width: 75%; /* Updated width to 75% */
+    width: 75%;
   }
   
   .contact-form {
     max-width: 700px;
     padding: 20px;
-    box-sizing: border-box; /* Ensure padding is included in the width */
-    margin: 0 auto; /* Center align the form */
+    box-sizing: border-box;
+    margin: 0 auto;
   }
   
   .contact-form h2 {
@@ -363,7 +361,6 @@ footer
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 50px; */
 }
 
 .footer-form{
@@ -384,7 +381,7 @@ footer
 
 .footer-form input:focus {
     outline: none;
-    border-color: #5f9ea0; /* Change the border color on focus */
+    border-color: #5f9ea0;
   }
 
 
@@ -561,11 +558,6 @@ footer
         width: 250px;
         height: auto;
     }
-
-    .booking-card div {
-        /* margin-top: 175px; */
-    }
-        
 }
 
 
