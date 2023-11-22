@@ -14,8 +14,21 @@ body {
 }
 a { text-decoration: none; color: #39393b; }
 
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+h2, h3{
+    font-family: 'Lato', sans-serif;
+}
+
 p, h1, h2, h3{
     color: #39393b;
+}
+
+p{
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
 }
 
 .p-left-m { 
@@ -47,7 +60,27 @@ button{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    height: 1px;
+    margin: 50px auto;
+    width: 75%;
+    opacity: 65%;
+}
+hr:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: #fafafa;
+}
 
 /* ==========HEADER============= */
 /* ==========LOGO============= */
@@ -99,9 +132,7 @@ ul {
 }
 
 /* ==========MAIN BODY CONTENT============= */
-
-
-/* ==========SECTION 1 STYLING============= */
+/* ==========LANDING SECTION STYLING============= */
 .landing-image{
     background-image: url('../images/landing.jpeg');
     background-size: cover;
@@ -117,24 +148,24 @@ ul {
     width: 25%;
     max-width: 400px;
     min-width: 250px;
-    height: 400px;
-    background-color: #fafafa;
+    height: 450px;
+    background-color: #fafafade;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+}
+
+.info-box > p{
+    width: 95%;
 }
 
 .container{
     display: flex;
     justify-content: center;
-}
-
-.info-box h2{
-    margin: 0;
-    font-size: 35px;
-    text-align: center;
 }
 
 .info-box button{
@@ -157,11 +188,11 @@ ul {
 /* ==========SECTION 2 STYLING============= */
 .about{
     margin-top: 50px;
-    height: 100vh;
+    height: 1250px;
 }
 
-.about p {
-    font-size: 24px;
+.about > h1 {
+    margin-bottom: 25px;    
 }
 
 .about > div > img {
@@ -179,7 +210,7 @@ ul {
     /* height: 33vh; */
     width: 75vw;
     max-width: 1300px;
-    margin: 50px auto 0 auto;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
@@ -218,14 +249,15 @@ ul {
 
 .booking-card{
     width: 85%;
-    max-width: 1300px;
-    border: #34495e;
+    max-width: 1200px;
+    border: #39393b1e;
     border-style: solid;
     border-radius: 15px;
     display: flex;
     position: relative;
     height: 300px;
     margin: 100px auto;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .booking-card img {
@@ -380,11 +412,14 @@ footer
 
 /* ===== SMALL DESKTOP: Media queries for laptop/small desktop ===== */
 @media only screen and (max-width: 1366px) { 
+    .info-box{
+        width: 375px;
+    }
 
     .image-gallery{
-    width: 1000px;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px;
+        width: 1000px;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px;
     }
 
     .image-gallery img {
@@ -399,12 +434,32 @@ footer
 }
 
 /* ===== TABLET: Media queries for verticle and horizontal ===== */
-@media only screen and (max-width: 1024px) { 
+@media only screen and (max-width: 1024px) {    
+    .about{
+        height: 1600px;
+    }
+
+    .about > div > img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .flex-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .reverse{
+        flex-direction: column;  
+    }
+
     .image-gallery{
-        width: 700px;
+        width: 650px;
         grid-template-columns: 300px 300px;
         grid-template-rows: 300px 300px 300px;
-        }
+    }
     
     .image-gallery img {
         height: 300px;
@@ -449,33 +504,14 @@ footer
         top: 350px;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 300px;
-        max-width: 100%;
-    }
-
-    .about{
-        height: 1600px;
-    }
-
-    .about > div > img {
-        width: 250px;
-        height: 250px;
-    }
-    
-    
-    .flex-container{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .flex-container:nth-child(3){
-        flex-direction: column;        
     }
 
     .flex-container > p {
         width: 80%;
+    }
+
+    .about{
+        margin-bottom: 150px;
     }
 
     .image-gallery{
@@ -502,9 +538,9 @@ footer
 /* ===== MOBILE: Media queries for small mobile resolution. ===== */
 @media only screen and (max-width: 640px) { 
     .about{
-        margin-bottom: 150px;
+        margin-bottom: 200px;
     }
-
+    
     .image-gallery{
         display: flex;
         flex-direction: column;
